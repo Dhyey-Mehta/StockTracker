@@ -17,7 +17,7 @@ os.environ['SDL_VIDEO_CENTERED'] = "True"
 pygame.font.init()
 font = pygame.font.Font('freesansbold.ttf', 512) 
 smallerFont = pygame.font.Font('freesansbold.ttf', 100) 
-openPrice = si.get_data(stock).open[-1]
+openPrice = si.get_data(stock).close[-1]
 
 
 stockSTR = font.render(stock.upper(), True,[0,0,0]) 
